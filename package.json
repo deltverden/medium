@@ -1,0 +1,25 @@
+{
+  "name": "medium",
+  "version": "1.0.0",
+  "description": "medium level",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deltverden/medium.git"
+  },
+  "author": "deltverden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deltverden/medium/issues"
+  },
+  "homepage": "https://github.com/deltverden/medium#readme"
+}
