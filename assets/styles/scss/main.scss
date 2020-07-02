@@ -48,8 +48,8 @@ body {
                 li {
     
                     &::after {
-                        top: .6em !important;
-                        height: .6em !important;
+                        top: 8px !important;
+                        height: 18px !important;
                     }
                 }
             }
@@ -87,6 +87,8 @@ body {
             height: 160px !important;
             
             ul {
+                flex-direction: column;
+                align-items: center;
                 li {
                     display: block !important;
 
@@ -207,14 +209,18 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                overflow: hidden;
                 
                 ul {
                     padding: 0;
                     margin: 0;
                     width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
             
                     li {
-                        display: inline;
+                        display: block;
                         height: 100%;
                         font-size: 30px;
                         font-weight: 400;
@@ -223,9 +229,10 @@ body {
             
                         &::after {
                             position: absolute;
+                            top: 2px;
                             right: -2px;
                             background: #fff;
-                            height: 27px;
+                            height: 100%;
                             width: 2px;
                             content: '';
                         }
