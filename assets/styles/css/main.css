@@ -1,10 +1,63 @@
 body {
   font-family: 'PT Sans', sans-serif;
   line-height: 22px;
+  font-size: 14px;
   margin: 0; }
 
+@media (max-width: 1248px) {
+  .slider div img {
+    display: none; } }
+
+@media (max-width: 1080px) {
+  .hc-head img {
+    width: 253px !important;
+    height: 80px !important; }
+  .hc-head p {
+    font-size: 1.9em !important; }
+  .ms .menu ul li::after {
+    top: .6em !important;
+    height: .6em !important; }
+  .ms .menu a {
+    font-size: .6em !important; } }
+
+@media (max-width: 720px) {
+  .hc-head img {
+    top: 0;
+    left: 0;
+    right: 0; }
+  .hc-head p {
+    text-align: center !important;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .ms .menu {
+    height: 160px !important; }
+    .ms .menu ul li {
+      display: block !important; }
+      .ms .menu ul li::after {
+        content: '';
+        display: none; }
+  .main {
+    width: 100% !important;
+    height: 100% !important; }
+    .main .container {
+      flex-direction: column;
+      height: 100% !important; }
+      .main .container .mc-left {
+        padding: 0 !important;
+        width: 100% !important;
+        height: 100% !important; }
+      .main .container .mc-right {
+        width: 100% !important;
+        height: 100% !important; }
+  .footer {
+    height: 100% !important; }
+    .footer .container {
+      height: 100% !important;
+      flex-direction: column; } }
+
 .container {
-  width: 980px;
+  max-width: 980px;
   height: 100%;
   margin: 0 auto; }
 
@@ -12,18 +65,18 @@ body {
   width: 100%;
   height: 230px;
   background: #ccc; }
-  .header .hc-head {
+  .header .container .hc-head {
     width: 100%;
     height: 230px;
     position: relative;
     display: flex;
     align-items: center; }
-    .header .hc-head img {
+    .header .container .hc-head img {
       position: absolute;
       left: 0;
       width: 273px;
       height: 100px; }
-    .header .hc-head p {
+    .header .container .hc-head p {
       position: absolute;
       right: 0;
       width: 273px;
@@ -37,6 +90,7 @@ body {
       text-align: end; }
 
 .ms {
+  width: 100%;
   height: 542px;
   position: relative; }
   .ms .menu {
@@ -44,6 +98,9 @@ body {
     height: 80px;
     background: #777777;
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 2; }
     .ms .menu .hc-menu {
       width: 100%;
@@ -84,11 +141,12 @@ body {
     z-index: 1;
     top: 20px; }
     .ms .slider div {
-      width: 1248px;
+      width: 100%;
       height: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center; }
       .ms .slider div img {
-        width: 100%;
+        width: 1248px;
         height: 100%; }
 
 .main {
