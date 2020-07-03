@@ -129,43 +129,45 @@ body {
       left: 0;
       right: 0;
       z-index: 2; }
-      .art .ms .menu .hc-menu {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden; }
-        .art .ms .menu .hc-menu ul {
-          padding: 0;
-          margin: 0;
+      .art .ms .menu .container {
+        max-width: 100%; }
+        .art .ms .menu .container .hc-menu {
           width: 100%;
+          height: 100%;
           display: flex;
           justify-content: center;
-          flex-wrap: wrap; }
-          .art .ms .menu .hc-menu ul li {
-            display: block;
-            height: 100%;
-            font-size: 30px;
-            font-weight: 400;
-            letter-spacing: 0.75px;
-            position: relative; }
-            .art .ms .menu .hc-menu ul li::after {
-              position: absolute;
-              top: 2px;
-              right: -2px;
-              background: #fff;
+          align-items: center;
+          overflow: hidden; }
+          .art .ms .menu .container .hc-menu ul {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; }
+            .art .ms .menu .container .hc-menu ul li {
+              display: block;
               height: 100%;
-              width: 2px;
-              content: ''; }
-            .art .ms .menu .hc-menu ul li:last-child::after {
-              display: none; }
-            .art .ms .menu .hc-menu ul li a {
-              color: #fff;
-              text-decoration: none;
-              padding: 0 20px; }
-              .art .ms .menu .hc-menu ul li a:hover {
-                text-decoration: underline; }
+              font-size: 30px;
+              font-weight: 400;
+              letter-spacing: 0.75px;
+              position: relative; }
+              .art .ms .menu .container .hc-menu ul li::after {
+                position: absolute;
+                top: 2px;
+                right: -2px;
+                background: #fff;
+                height: 100%;
+                width: 2px;
+                content: ''; }
+              .art .ms .menu .container .hc-menu ul li:last-child::after {
+                display: none; }
+              .art .ms .menu .container .hc-menu ul li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 0 20px; }
+                .art .ms .menu .container .hc-menu ul li a:hover {
+                  text-decoration: underline; }
     .art .ms .slider {
       width: 100%;
       height: 462px;
